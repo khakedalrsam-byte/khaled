@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تسجيل الدخول</title>
+</head>
+<body>
+
+    <h1>سجل دخولك</h1>
+
+    <input type="text" id="username" placeholder="اكتب اسمك">
+
+    <button onclick="login()">دخول</button>
+
+    <script>
+        function login() {
+            let name = document.getElementById("username").value;
+
+
+            localStorage.setItem("username", name);
+
+            window.location.href = "home.html";
+        }
+    </script>
+
+</body>
+</html>
